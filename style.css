@@ -1,0 +1,199 @@
+:root {
+    --black: #3f3d56;
+    --midBlack: rgba(63, 61, 86, 0.5);
+    --white: #ffffff;
+    --blue: #6c63ff;
+    --lightBlue: #857ff9;
+    --grey: #bbbbbb;
+}
+
+/*  */
+/*  */
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+#mainContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px 700px 400px 75px;
+}
+
+#nbContainer {
+    /* background-color: turquoise; */
+    display: grid;
+    grid-template-rows: auto max-content auto;
+    grid-template-columns: 20px max-content auto;
+}
+
+#navBar {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-rows: max-content;
+    grid-column-gap: 5px;
+}
+
+.navBarItems {
+    text-decoration: none;
+    grid-row-start: 1;
+    color: var(--blue);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: border-bottom 100ms ease-in-out;
+}
+
+.navBarItems:hover {
+    border-bottom: 2px solid var(--lightBlue);
+    color: var(--lightBlue);
+}
+
+#visualPart {
+    display: grid;
+    grid-template-columns: auto max-content 50px;
+    grid-template-rows: auto max-content auto;
+    /* border-bottom: 1px solid var(--black); */
+}
+
+#img {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    width: 750px;
+    height: 600px;
+    background-image: url('./res/img1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#text {
+    position: absolute;
+    left: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#pB {
+    color: var(--blue);
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+#pS {
+    max-width: 900px;
+    font-size: 25px;
+    /* text-indent: 0px; */
+    color: var(--black);
+}
+
+#sU {
+    width: 250px;
+    height: 75px;
+    border: 3px solid var(--blue);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto max-content auto;
+    grid-template-rows: auto max-content auto;
+    color: var(--blue);
+    cursor: pointer;
+    user-select: none;
+    transition: all 200ms ease-in-out;
+}
+
+
+#sU p {
+    font-family: 'Open Sans', sans-serif;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+#sU:active {
+    background-color: var(--blue);
+    color: white;
+}
+
+
+#smallInfos {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: auto max-content max-content max-content auto;
+    grid-template-rows: auto max-content auto;
+    grid-column-gap: 80px;
+}
+
+.userCard {
+    grid-row-start: 2;
+    width: 450px;
+    height: 300px;
+    border: 1px solid var(--midBlack);
+    /* box-shadow: 0px 2px 6px var(--grey); */
+    border-radius: 20px;
+    /*  */
+    display: grid;
+    grid-template-columns: auto max-content auto;
+    grid-template-rows: 20px max-content max-content max-content auto;
+    text-align: center;
+}
+
+.userAvatar {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    background-color: var(--midBlack);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 0 auto;
+    /*  */
+    background-position: center;
+    background-size: cover;
+}
+
+#ua1 {
+    background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/beeafc17-3ebe-4e1d-b250-404f1ea56988-profile_image-300x300.png');
+}
+
+#ua2 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/86/PewDiePie_at_PAX_2015_crop.jpg');
+}
+
+#ua3 {
+    background-image: url('https://gamepedia.cursecdn.com/twitch_gamepedia/thumb/1/1a/Imaqtpie.PNG/290px-Imaqtpie.PNG?version=e318d2140fdd8f69729ba736f56c2829');
+}
+
+.userName {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--blue);
+    font-size: 17px;
+}
+
+.userDescription {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--midBlack);
+    font-size: 12px;
+    max-width: 350px;
+}
+
+#copy {
+    background-color: var(--black);
+    color: #5d5a77;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+}
